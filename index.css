@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Brice-Bold';
+  src: url('fonts/Brice-BoldSemiCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Brice-BoldSemiCondensed';
+  src: url('fonts/Brice-BoldSemiCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BasisGrotesque-Regular';
+  src: url('fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden; /* Impede o scroll horizontal */
+  background-color: #fefaf1 !important;
+  font-family: 'BasisGrotesque-Regular';
+}
+
+.landing{
+  padding-top: 50px;
+  min-block-size: 780px;
+}
+
+#landing-texto{
+  padding: 0px 50px 0px 50px;
+}
+
+.landing h2{
+  font-family: 'Brice-Bold';
+  font-size: 70px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #131646;
+  -webkit-text-fill-color: #ff9a52;
+}
+
+.landing p{
+  padding-left: 10px;
+  border-left: 3px solid #0c104b;
+  border-top-left-radius: 2px;
+  font-size: 18px;
+  text-align: justify;
+  animation: border-animation 1s ease-in-out; /* Duração da animação */
+}
+
+.landing .container-fluid {
+  overflow: hidden; /* Remove excesso de conteúdo horizontal */
+  padding: 0; /* Remove espaçamento extra */
+}
+
+.landing img{
+  width: 625px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#conteudoTexto{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#corfundo{
+  background-image: url(img/img-index1.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  size: 100%;
+  height: 700px;
+  margin-bottom: 150px;
+}
+
+.container-slider {
+  margin-top: 50px;
+  background-color: #fffdfa; /* Fundo mais claro */
+  width: 100%; /* Responsivo */
+  overflow: hidden; /* Garante que nada fora do contêiner seja exibido */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 1px; /* Bordas arredondadas */
+  border: 4px solid rgb(219, 99, 23);
+}
+
+.logos {
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+  max-width: 100%; /* Ocupa todo o espaço disponível */
+  margin: auto;
+  overflow: hidden;
+}
+
+.logos ul {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Espaçamento entre os itens */
+  animation: slide 10s linear infinite; /* Animação infinita */
+}
+
+.logos ul:hover {
+  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
+
+.logos img {
+  width: 150px; /* Tamanho responsivo */
+  height: auto; /* Mantém a proporção das imagens */
+  filter: grayscale(20%);
+  object-fit: contain; /* Garante que as imagens não distorçam */
+}
+
+.titulo{
+  margin-bottom: 25px;
+  font-family: 'Brice-Bold';
+  font-size: 70px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #131646;
+  -webkit-text-fill-color: #ff9a52;
+}
+
+.card-container {
+  padding: 100px 15px;
+  background: url(img/background-guiar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Garante que os elementos quebrem em telas menores */
+  gap: 20px; /* Espaçamento entre os cards */
+  border-bottom: 5px solid rgb(219, 99, 23);
+  margin-bottom: 60px;
+}
+
+.card-body {
+  margin: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.589);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%; /* Define largura completa para responsividade */
+  max-width: 300px; /* Limita a largura máxima */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Garante quebra de linha para responsividade */
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card-body:hover {
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+.card-body h5 {
+  font-family: 'Brice-BoldSemiCondensed';
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+@keyframes border-animation {
+  0% {
+    border-left-height: 0px; /* Borda inicial com largura 0 */
+    border-left-color: transparent; /* Cor transparente */
+  }
+  100% {
+    border-left-height: 200px; /* Borda final com largura definida */
+    border-left-color: #0c104b; /* Cor final da borda */
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 7)); /* Move todo o conteúdo uma vez */
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body {
+    width: 280px; /* Alinhamento consistente em telas grandes */
+  }
+}
+
+@media (max-width: 991px) {
+  .card-body {
+    margin-bottom: 40px;
+  }
+}

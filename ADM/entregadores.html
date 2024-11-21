@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral</title>
+    <link
+    rel="Shortcut Icon" 
+    type="image/png"
+    href="../img/G.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .spacer {
+            flex: 1; /* Esta div empurra o terceiro botão para o fundo */
+        }
+
+        .main {
+            margin-left: 250px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="pedidos.html">Pedidos</a>
+        <a href="entregadores.html">Entregadores</a>
+        <div class="spacer"></div>
+        <a href="#">Meu perfil</a>
+    </div>
+
+    <div class="main">
+        <h2>Conteúdo Principal</h2>
+        <p>Esta é a área principal do conteúdo da página.</p>
+    </div>
+</body>
+</html>

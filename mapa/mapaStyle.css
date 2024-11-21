@@ -1,0 +1,19 @@
+#map{
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 1px 1px 30px 10px rgb(115, 115, 115);
+}
+#criarRota{
+    font-size: 23px;
+    width: 50%;
+    padding: 1%;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+#criarRota:hover{
+    transform: scale(1.1);
+}
+
+#map{
+ height: 670px;
+}

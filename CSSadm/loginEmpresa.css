@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Brice-Bold';
+  src: url('../fonts/Brice-BoldSemiCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Brice-BoldSemiCondensed';
+  src: url('../fonts/Brice-SemiBoldCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BasisGrotesque-Regular';
+  src: url('../fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fefaf1 !important;
+  font-family: 'BasisGrotesque-Regular';
+}
+
+  button{
+    font-style: normal;
+  }
+
+  #seta{
+    z-index: 1;
+    margin-left: 20px;
+    height: 65px;
+    width: 65px;
+  }
+
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+  }
+
+  h2{
+    color: #ee6d22;
+  }
+
+  form {
+    border-top: 3px solid #fc8835 !important;
+    display: flex;
+    flex-direction: row;
+    max-width: 1080px;
+    height: 792px;
+    position: relative;
+    float: right;
+    padding: 20px 50px 0px 30px;
+    border-radius: 5% 0% 0% 5%;
+    background-color: #fdfbf8;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+   
+  .formulario h4{
+    font-family: 'Brice-BoldSemiCondensed';
+  }
+
+   form aside{
+    width: 55%;
+   }
+
+   form aside h1{
+    text-align: left;
+   }
+
+   #Olá{
+     margin-top: 15px;
+     font-size: 80px;
+     text-align: left;
+   }
+
+   form aside img{
+    margin-top: 25px;
+    height: 392px;
+    width: 600px;
+   }
+   
+   form article{
+    align-content: center;
+    width: 45%;
+   }
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff5e00;
+    transition: .4s;
+}
